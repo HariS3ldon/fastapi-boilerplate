@@ -1,0 +1,24 @@
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/code
+      - ~/.ssh:/root/.ssh # mount ssh keys for git access
+  
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
