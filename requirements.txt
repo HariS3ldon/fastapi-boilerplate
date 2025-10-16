@@ -6,3 +6,4 @@ python-lsp-server[all]
 pylsp-mypy
 python-lsp-black
 python-lsp-isort
+python-dotenv
