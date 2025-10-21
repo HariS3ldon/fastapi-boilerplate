@@ -22,7 +22,6 @@ services:
       - pgdata:/var/lib/postgresql/data
   adminer:
     image: adminer:5
-    restart: always
     ports:
       - 5050:8080
 
