@@ -26,7 +26,6 @@
 				"tamasfe.even-better-toml"
 			],
 			"settings": {
-				"python.pythonPath": "/usr/bin/python3",
 				"python.languageServer": "Pylance"
 			}
 		}
@@ -36,7 +35,7 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [8080]
+	"forwardPorts": [8080],
 
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
 	// "runServices": [],
@@ -45,7 +44,7 @@
 	// "shutdownAction": "none",
 
 	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "cat /etc/os-release",
+	"postCreateCommand": "mkdir -p .vscode && echo '{\"python.defaultInterpreterPath\": \"'$(poetry env info --executable)'\"}' > .vscode/settings.json"
 
 	// Configure tool-specific properties.
 	

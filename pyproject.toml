@@ -1,12 +1,12 @@
 [project]
-name = "ms-boilerplate"
+name = "ms_boilerplate"
 version = "0.1.0"
 description = "A simple ms boilerplate for Python"
 authors = [
     {name = "Hari S3ldon",email = "enrico.pascucci@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
     "fastapi[standard] (>=0.119.0)",
     "pydantic (>=2.12.0)",
