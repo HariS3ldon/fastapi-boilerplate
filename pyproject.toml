@@ -19,7 +19,8 @@ dependencies = [
     "pylsp-mypy (>=0.7.0,<0.8.0)",
     "python-lsp-black (>=2.0.0,<3.0.0)",
     "python-lsp-isort (>=0.2.1,<0.3.0)",
-    "python-dotenv (>=1.2.1,<2.0.0)"
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "psycopg2-binary (>=2.9.11,<3.0.0)"
 ]
 
 [project.optional-dependencies]
