@@ -12,6 +12,7 @@ RUN apt update && apt install -y git curl vim wget zsh && \
     echo 'alias fastapi-prod="poetry run uvicorn fa_ms_auth.main:app --reload --host 0.0.0.0 --port 8080 --reload-exclude var --log-level error' >> /root/.zshrc
 
 RUN pip install poetry && \
-    poetry install --all-extras
+    poetry install --all-extras && \
+    poetry run alembic upgrade head
 
 CMD ["tail", "-f", "/dev/null"]
