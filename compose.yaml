@@ -27,3 +27,5 @@ services:
 
 volumes:
   pgdata:
+    external: true
+    name: boilerplate_pgdata #edit this name using your project name
