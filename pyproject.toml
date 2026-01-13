@@ -1,5 +1,5 @@
 [project]
-name = "ms-boilerplate"
+name = "ms_boilerplate"
 version = "0.1.0"
 description = "A simple ms boilerplate for Python"
 authors = [

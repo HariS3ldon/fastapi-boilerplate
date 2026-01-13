@@ -9,7 +9,6 @@ services:
       - .:/code
       - ~/.ssh:/root/.ssh # mount ssh keys for git access
       - ~/.gitconfig:/root/.gitconfig
-  
   db:
     image: postgres:18
     environment:
@@ -24,7 +23,6 @@ services:
     image: adminer:5
     ports:
       - 5050:8080
-
 volumes:
   pgdata:
     external: true
